@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
     $('.ytb').on("click",function(){
         let video = $('.video-popup')
-        console.log("./img/" + $(this).attr("id") + ".mp4")
+        console.log("img/" + $(this).attr("id") + ".mp4")
         video.find("video").attr("src", "./img/" + $(this).attr("id") + ".mp4")
         video.fadeIn('slow')
         return false;
