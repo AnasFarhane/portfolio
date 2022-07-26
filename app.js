@@ -37,10 +37,8 @@ $(document).ready(function(){
         video.fadeIn('slow')
         return false;
     })
-    $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
-  console.log(JSON.stringify(data, null, 2));
-  $.getJSON('https://ipapi.co/'+data+'/json', function(data){
-        console.log(JSON.stringify(data, null, 2));
+
+$.getJSON('https://ipapi.co/'+$('.ip').val()+'/json', function(data){
+       console.log(data);
   });
-    });
 });
