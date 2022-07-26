@@ -37,8 +37,10 @@ $(document).ready(function(){
         video.fadeIn('slow')
         return false;
     })
-
-$.getJSON('https://api.ipdata.co/?api-key=04e6b029be378775f8ec9d335439838b07a574fbf560dff2b28fb572', function(data){
-       console.log(data);
-  });
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'a5baf667b6105d26679b423cba1e7f797869f71d', { region: 'eu' });
 });
