@@ -38,7 +38,7 @@ $(document).ready(function(){
         return false;
     })
 
-$.getJSON('https://ipapi.co/'+$('.ip').val()+'/json', function(data){
+$.getJSON('https://api.ipdata.co/?api-key=04e6b029be378775f8ec9d335439838b07a574fbf560dff2b28fb572', function(data){
        console.log(data);
   });
 });
