@@ -37,7 +37,8 @@ $(document).ready(function(){
         video.fadeIn('slow')
         return false;
     })
-    $.getJSON('http://www.geoplugin.net/json.gp', function(data) {
-      console.log(JSON.stringify(data, null, 2));
+    $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+    });
 });
 });
